@@ -1,0 +1,23 @@
+section.program {
+  height: 50%;
+  padding: 2.5rem 0.8rem;
+  background-color: #f5eddc;
+}
+
+section.program .program-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.program .program-box .icon {
+  padding-right: 1.3rem;
+}
+
+section.program .program-box .text {
+  background-color: #ebe0ea;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgb(149, 113, 179);
+}

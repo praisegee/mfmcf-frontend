@@ -1,0 +1,163 @@
+header {
+  background-color: #fff;
+  height: 12%;
+  box-shadow: 0 4px 10px rgb(149, 113, 179);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header img {
+  width: 50px;
+  cursor: pointer;
+}
+
+header img:hover {
+  border: none;
+}
+
+header img:nth-child(2) {
+  width: 40px;
+}
+
+header li a,
+header .dropdown {
+  margin-left: 40px;
+  font-weight: 500;
+}
+
+header .nav .flex i {
+  display: inline-block;
+  margin: 4px 0 0 10px;
+}
+
+header a:hover,
+header .dropdown:hover {
+  color: #8b1874;
+  cursor: pointer;
+}
+
+header .projects a {
+  text-decoration: none;
+  border: none;
+  color: #fff;
+}
+
+header .toggle {
+  display: none;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+header .toggle span i {
+  font-size: 30px;
+  color: #8b1874;
+}
+
+@media screen and (max-width: 873px) {
+  header {
+    padding: 0;
+    height: 10vh;
+  }
+  header img {
+    width: 50px;
+    padding-top: 8px;
+  }
+  header .button,
+  header .dropdown {
+    display: none;
+  }
+  header .nav .flex {
+    display: none;
+  }
+  header .toggle {
+    display: block;
+    padding-top: 10px;
+  }
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: #b71375ee;
+    padding: 2rem 1.4rem;
+  }
+  header .small li {
+    padding-bottom: 0.6rem;
+  }
+  header li a,
+  header .small i {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  header .small i {
+    font-size: 1.2rem;
+  }
+  header li a:hover {
+    color: #fff;
+    border: none;
+  }
+  header .button {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  header .container {
+    max-width: 90%;
+  }
+  header .nav .flex li a,
+  header .dropdown {
+    margin-left: 30px;
+    font-size: 0.9rem;
+  }
+  .show {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  header .container {
+    max-width: 84%;
+  }
+  header .nav .flex {
+    display: inline;
+  }
+  header .nav .flex li {
+    display: inline-block;
+    font-size: 0.95rem;
+    margin: 0;
+    padding: 0;
+  }
+  .show {
+    left: 33%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  header .nav .flex {
+    display: block;
+  }
+  header .nav .flex li {
+    display: inline-block;
+    font-size: 0.98rem;
+  }
+  header .button {
+    padding: 8px 12px;
+  }
+  .show {
+    left: 34%;
+  }
+}
+
+@media screen and (max-width: 1112px) {
+  .show {
+    left: 34%;
+  }
+}

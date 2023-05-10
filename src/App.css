@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loader {
+  background-color: #e0dbde;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  max-width: 80%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #0e0030;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  background-color: #b71375;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+  position: fixed;
+  top: 12vh;
+  left: 37%;
+  width: 28%;
+  height: 25%;
+  z-index: 1000;
+  background-color: #ffffffdd;
+  padding: 0.3rem 0.8rem;
+  font-family: "Space Grotesk", sans-serif;
+  justify-content: space-around;
+  box-shadow: 0 4px 10px rgb(149, 113, 179);
+}
+
+.show div {
+  width: 50%;
+  font-size: 1rem;
+  position: relative;
+  top: 20px;
+}
+
+.show li {
+  color: #8b1874;
+  padding: 0.4rem;
+}
+
+.show li:hover {
+  text-decoration: underline;
+}
+
+.show li a {
+  margin-left: 0.3rem;
+}
+
+.show li i {
+  font-size: 1rem;
 }

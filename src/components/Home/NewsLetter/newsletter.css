@@ -1,0 +1,55 @@
+section.newsletter {
+  background-image: url("../../images/newsletter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(324, 81%, 40%, 0.329);
+  background-blend-mode: darken;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  padding: 30px;
+}
+
+section.newsletter .text h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+section.newsletter .text p {
+  font-size: 1.3rem;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* section.newsletter form {
+} */
+
+section.newsletter .form-group {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section.newsletter .form-group input {
+  width: 350px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  margin-bottom: 6px;
+  background-color: #dadada;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+}
+
+section.newsletter form button {
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+}

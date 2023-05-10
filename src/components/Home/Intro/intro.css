@@ -1,0 +1,52 @@
+section.intro {
+  background-image: url("../../images/people1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(324, 81%, 40%, 0.329);
+  background-blend-mode: screen;
+  height: 70vh;
+  text-align: left;
+  position: relative;
+}
+
+#fuoye {
+  width: 10px;
+  height: 10px;
+}
+
+section.intro .text {
+  position: absolute;
+  top: 16vh;
+  padding: 1.2rem;
+}
+
+section.intro .text h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: #eee;
+  text-align: right;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+section.intro .text p {
+  color: #ddd;
+  text-align: right;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+section.intro .text h1 {
+  padding-top: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 45px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#p5 {
+  background-color: rgba(119, 80, 134, 0.623);
+  padding: 1.3rem;
+  font-family: "Space Grotesk", sans-serif;
+}

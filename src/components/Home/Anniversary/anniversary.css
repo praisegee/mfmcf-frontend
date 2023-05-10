@@ -1,0 +1,65 @@
+section.anniversary {
+  background-color: #fff;
+  width: 100%;
+  height: 60%;
+}
+
+section.anniversary .flex {
+  display: flex;
+  justify-content: center;
+}
+
+#marquee {
+  color: #fff;
+  width: 100%;
+  font-weight: 500;
+  background-color: #8b1874bb;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+section.anniversary img {
+  width: 100%;
+  height: 50px;
+}
+
+section.anniversary .flex img {
+  width: 400px;
+  height: 400px;
+}
+
+section.anniversary .flex pre {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #404040;
+}
+
+@media screen and (max-width: 440px) {
+  section.anniversary .flex pre {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.anniversary .flex pre {
+    font-size: 1.4rem;
+  }
+  section.anniversary .flex {
+    flex-wrap: wrap;
+  }
+}

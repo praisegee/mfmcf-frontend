@@ -1,0 +1,52 @@
+section.convention {
+  background-color: #f5eddc;
+  font-family: "Space Grotesk", sans-serif;
+  margin: auto;
+  height: 60%;
+  width: 100%;
+}
+
+section.convention .text {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  top: 20px;
+}
+
+section.convention .text p {
+  width: 60%;
+  margin: auto;
+}
+
+section.convention .text p span {
+  color: #ff6000;
+  font-size: 2rem;
+}
+
+section.convention .text h3 {
+  margin: 4px;
+  font-family: "Pacifico", cursive;
+  color: #ff6000;
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  section.convention .text p {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  section.convention .text h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section.convention .text p {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  section.convention .text h3 {
+    font-size: 1.8rem;
+  }
+}
