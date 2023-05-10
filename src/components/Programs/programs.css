@@ -4,20 +4,74 @@ section.program {
   background-color: #f5eddc;
 }
 
+section.program .title {
+  color: rgb(58, 49, 49);
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
 section.program .program-box {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
 section.program .program-box .icon {
-  padding-right: 1.3rem;
+  padding: 1.3rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px 2px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.6rem 1.2rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #c78dc2;
+  color: #fff;
 }
 
 section.program .program-box .text {
+  max-width: 60%;
   background-color: #ebe0ea;
-  margin: 2rem;
+  border: 1px solid purple;
+  margin: 1.6rem;
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgb(149, 113, 179);
+}
+
+section.program .program-box .text .date-time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+section.program .program-box .text .date-time i {
+  margin: 12px 10px 0;
+  color: rgb(58, 49, 49);
+}
+
+section.program .program-box .text h3 {
+  font-family: "Ubuntu", sans-serif;
+  padding-bottom: 0.6rem;
+  font-size: 1.4rem;
+  color: rgb(58, 49, 49);
+}
+
+section.program .program-box .text p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+@media screen and (max-width: 676px) {
+  section.program .program-box .icon {
+    display: none;
+  }
+  section.program .program-box .text {
+    max-width: 100%;
+  }
 }
