@@ -2,6 +2,14 @@ section.program {
   height: 50%;
   padding: 2.5rem 0.8rem;
   background-color: #f5eddc;
+  /* background-image: linear-gradient(
+      hsla(60, 11%, 38%, 0.103),
+      rgba(185, 185, 199, 0.301)
+    ),
+    url("../images/img-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
 }
 
 section.program .title {

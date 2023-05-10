@@ -34,11 +34,11 @@ const Header = () => {
                           onClick={() => setConnectList(!connectList)}
                         >
                           {nav.name}
-                          {connectList ? (
-                            <i class="fa-solid fa-angle-down"></i>
-                          ) : (
+                          {/* {connectList ? ( */}
+                          <i class="fa-solid fa-angle-down"></i>
+                          {/* ) : (
                             <i class="fa-solid fa-angle-right"></i>
-                          )}
+                          )} */}
                         </div>
                       ) : (
                         <Link to={nav.path}>{nav.name}</Link>
