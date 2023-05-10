@@ -1,7 +1,7 @@
 import React from "react";
 import { navigations } from "../../data/Nav";
 import { social } from "../../data/Social";
-import { programs } from "../../data/Event";
+import { programs } from "../../data/Program";
 import { Link } from "react-router-dom";
 import "./footer.css";
 

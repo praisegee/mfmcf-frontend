@@ -1,6 +1,6 @@
 import React from "react";
 import "./programs.css";
-import { programs } from "../data/Event";
+import { programs } from "../data/Program";
 // import Anniversary from "../Home/Anniversary/Anniversary";
 import FirstTimer from "../Home/FirstTimer/FirstTimer";
 
