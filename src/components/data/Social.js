@@ -19,4 +19,9 @@ export const social = [
     icon: "fa-brands fa-square-whatsapp",
     link: "https://chat.whatsapp.com/HWxIVEKVmhbKMBUrOTlthK",
   },
+  {
+    name: "youtube",
+    icon: "fa-brands fa-youtube",
+    link: "https://youtube.com",
+  },
 ];

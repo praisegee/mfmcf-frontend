@@ -11,12 +11,12 @@ const Header = () => {
     <>
       <header>
         <div className="container flex">
-          <Link to="/">
+          <a href="/">
             <div className="logo flex">
               <img src="./images/mfmcf-logo.png" alt="" />
               <img src="./images/fuoye-logo.png" alt="" />
             </div>
-          </Link>
+          </a>
           <div className="nav">
             <ul className={navlist ? "small" : "flex"}>
               {navlist

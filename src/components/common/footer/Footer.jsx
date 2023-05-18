@@ -38,7 +38,7 @@ const Footer = () => {
               <h2>Prayers</h2>
               <ul>
                 <li>
-                  <Link to="/prayer-request">Prayer request</Link>
+                  <Link to="/#">Prayer request</Link>
                 </li>
               </ul>
             </div>

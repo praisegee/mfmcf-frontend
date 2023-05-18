@@ -52,6 +52,12 @@ section.celebrant .text {
   box-shadow: 3px 4px 4px rgb(84, 43, 117);
   border-radius: 10% 2px;
   object-fit: cover;
+  transition: 0.2s;
+}
+
+.celeb img:hover {
+  width: 270px;
+  height: 270px;
 }
 
 .celeb .lower p {

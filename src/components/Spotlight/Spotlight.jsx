@@ -14,41 +14,41 @@ function Spotlight() {
           <div className="content">
             <div className="profile">
               <div className="img">
-                <img src="../images/0001.jpeg" alt="" />
+                <img src="../images/organise.jpeg" alt="" />
                 {/* <Skeleton /> */}
               </div>
             </div>
             <div className="details">
               <p>
-                <span>Name:</span> Adesanmi Dayo PraiseGod
+                <span>Name:</span> Bro Kenny
               </p>
               <p>
-                <span>Bio:</span> Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Illum velit placeat reiciendis
+                <span>Bio:</span> Handsome, hard-working and very cool guy...
+                😊😌
               </p>
               <p>
-                <span>Birthday:</span> Oct 9th
+                <span>Birthday:</span> May 2nd
               </p>
               <p>
-                <span>Marital Status:</span> Single
+                <span>Marital Status:</span> Married
               </p>
               <p>
                 <span>Campus:</span> Oye
               </p>
               <p>
-                <span>Faculty:</span> Science
+                <span>Faculty:</span> Education
               </p>
               <p>
-                <span>Department:</span> Computer Science
+                <span>Department:</span> Mathematics Education
               </p>
               <p>
-                <span>Hobby:</span> Cooking, Teaching
+                <span>Hobby:</span> Teaching
               </p>
               <p>
-                <span>Fav Bible verse:</span> John 3 v 16
+                <span>Fav Bible verse:</span> Rom 12 v 2
               </p>
               <p>
-                <span>Phone Number:</span> 09033345017
+                <span>Phone Number:</span> +2348022222222
               </p>
             </div>
           </div>

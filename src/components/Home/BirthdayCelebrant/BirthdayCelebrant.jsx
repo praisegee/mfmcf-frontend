@@ -40,7 +40,7 @@ function Celebrant({ name, birthday, picture }) {
 function BirthdayCelebrant({ deviceType }) {
   const [month, setMonth] = useState("");
   useEffect(() => {
-    setMonth(new Date().toLocaleString("default", { month: "short" }));
+    setMonth(new Date().toLocaleString("default", { month: "long" }));
   }, []);
 
   return (

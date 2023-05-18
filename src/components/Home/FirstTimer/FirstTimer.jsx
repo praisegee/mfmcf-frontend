@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./firsttimer.css";
-import { Link } from "react-router-dom";
 
 function FirstTimer() {
+  const [modal, setModal] = useState(false);
+  const [userData, setUserData] = useState({
+    firstName: "",
+    lastName: "",
+    department: "",
+    hostelAddress: "",
+    phoneNumber: "",
+    dateOfBirth: "",
+  });
+
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setUserData((prevData) => ({ ...prevData, [name]: value }));
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert(`Name: ${userData.firstName}`);
+  }
+
   return (
     <>
       <section className="firsttimer">
@@ -20,11 +39,65 @@ function FirstTimer() {
               </pre>
             </p>
           </div>
-          <Link to="/first-timer">
-            <div className="button">Let's know you more</div>
-          </Link>
+          <div className="button" onClick={() => setModal(!modal)}>
+            Let's know you more
+          </div>
         </div>
       </section>
+      <div id="modal" className={modal ? "modal-show" : "modal-hide"}>
+        <div className="form">
+          <div className="close-btn" onClick={() => setModal(!modal)}>
+            X
+          </div>
+          <p>Please, take your time to fill out this form.</p>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              onChange={handleChange}
+              name="firstName"
+              value={userData.firstName}
+              required
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              onChange={handleChange}
+              name="lastName"
+              value={userData.lastName}
+              required
+              placeholder="Last Name"
+            />
+            <input type="text" name="dept" required placeholder="Department" />
+            <input
+              type="text"
+              onChange={handleChange}
+              name="hostelAddress"
+              value={userData.hostelAddress}
+              required
+              placeholder="Hostel Address"
+            />
+            <input
+              type="tel"
+              onChange={handleChange}
+              name="phoneNumber"
+              value={userData.phoneNumber}
+              required
+              placeholder="Phone Number"
+            />
+            <input
+              type="date"
+              onChange={handleChange}
+              name="dateOfBirth"
+              value={userData.dateOfBirth}
+              required
+              placeholder="DOB"
+            />
+            <button className="button btn" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </>
   );
 }

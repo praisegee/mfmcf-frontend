@@ -11,7 +11,7 @@ export const celebrants = [
   },
   {
     name: "Bro Israel",
-    birthday: "12-05",
+    birthday: "20-11",
     picture: "../images/AMD.jpg",
   },
 ];
