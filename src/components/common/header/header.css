@@ -1,6 +1,6 @@
 header {
   background-color: #fff;
-  height: 12%;
+  height: 12vh;
   box-shadow: 0 4px 10px rgb(149, 113, 179);
   padding: 12px 0;
   position: sticky;
@@ -38,7 +38,7 @@ header .dropdown:hover {
   cursor: pointer;
 }
 
-header .projects a {
+header .events a {
   text-decoration: none;
   border: none;
   color: #fff;
@@ -62,7 +62,7 @@ header .toggle span i {
 .show {
   display: flex;
   position: fixed;
-  top: 13vh;
+  top: 12%;
   left: 37%;
   width: 28%;
   height: 25%;
@@ -151,13 +151,6 @@ header .toggle span i {
   }
 }
 
-/* @media screen and (min-width: 873px) {
-  .show {
-    top: 10vh;
-    left: 20%;
-  }
-} */
-
 @media screen and (max-width: 976px) {
   header .container {
     max-width: 90%;
@@ -176,24 +169,27 @@ header .toggle span i {
   header .container {
     max-width: 84%;
   }
-  header .nav .flex {
+  /* header .nav .flex {
     display: inline;
-  }
+  } */
   header .nav .flex li {
     display: inline-block;
     font-size: 0.95rem;
     margin: 0;
     padding: 0;
   }
+  /* header .button {
+    display: none;
+  } */
   /* .show {
     left: 33%;
   } */
 }
 
 @media screen and (max-width: 1080px) {
-  header .nav .flex {
-    display: block;
-  }
+  /* header .nav .flex {
+    display: none;
+  } */
   header .nav .flex li {
     display: inline-block;
     font-size: 0.98rem;

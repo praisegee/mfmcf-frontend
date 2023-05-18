@@ -8,7 +8,10 @@ function Anniversary() {
       <section className="anniversary">
         <img src={Jump} alt="" />
         <div id="marquee">
-          <p>MFMCF FUOYE is celebreting her 10th year anniversary...</p>
+          <p>
+            <strong>Hallelujah! Hallelujah!! Hallelujah!!! MFMCF FUOYE </strong>
+            is celebreting her 10th year anniversary...
+          </p>
         </div>
         <div className="container">
           <div className="flex">

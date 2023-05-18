@@ -60,7 +60,6 @@ const Footer = () => {
                 <p>
                   Along Arakasin Church,
                   <br /> Usin Area, Ikole Ekiti, Ekiti State
-                  {/* <br /> Oye Ekiti, Ekiti state. */}
                 </p>
               </div>
             </div>

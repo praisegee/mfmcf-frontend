@@ -47,9 +47,9 @@ const Header = () => {
                   ))}
             </ul>
           </div>
-          <Link to="/projects">
+          <Link to="/events">
             <div className="button flex">
-              <span className="projects">Projects</span>
+              <span className="events">Events</span>
             </div>
           </Link>
           <div className="toggle">

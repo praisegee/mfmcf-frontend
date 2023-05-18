@@ -25,7 +25,7 @@ export const programs = [
   },
   {
     name: "Power Must Change Hand",
-    day: "First Saturday",
+    day: "First Saturday of the month",
     time: "7:00am",
     desc: "We connect live to the international headquarters for power-packed sessions of Power Must Change Hands with our Father-in-the-Lord, Dr. D.K. Olukoya. Chains are broken.",
     letter: "PMCH",
