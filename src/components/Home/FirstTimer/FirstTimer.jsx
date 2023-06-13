@@ -17,9 +17,26 @@ function FirstTimer() {
     setUserData((prevData) => ({ ...prevData, [name]: value }));
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    alert(`Name: ${userData.firstName}`);
+    const url = "http://127.0.0.1:8000/api/members/";
+    const req = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        first_name: userData.firstName,
+        last_name: userData.lastName,
+        department: userData.department,
+        hostel_address: userData.hostelAddress,
+        phone_number: userData.phoneNumber,
+        date_of_birth: userData.dateOfBirth,
+      }),
+    });
+    const res = await req.json();
+    // Response
+    console.log("Response: ", res);
   }
 
   return (
@@ -67,7 +84,14 @@ function FirstTimer() {
               required
               placeholder="Last Name"
             />
-            <input type="text" name="dept" required placeholder="Department" />
+            <input
+              type="text"
+              onChange={handleChange}
+              name="department"
+              value={userData.department}
+              required
+              placeholder="Department"
+            />
             <input
               type="text"
               onChange={handleChange}

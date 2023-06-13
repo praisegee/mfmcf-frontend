@@ -23,6 +23,11 @@ const responsive = {
   },
 };
 
+// async function getBirthdayClebrant() {
+//   const resp = await fetch("http://127.0.0.1:8000/api/birthday-celebrants/");
+//   return await resp.json();
+// }
+
 function Celebrant({ name, birthday, picture }) {
   return (
     <>
@@ -39,6 +44,9 @@ function Celebrant({ name, birthday, picture }) {
 
 function BirthdayCelebrant({ deviceType }) {
   const [month, setMonth] = useState("");
+  // const celebrants = getBirthdayClebrant();
+
+  // const celebrants = [];
   useEffect(() => {
     setMonth(new Date().toLocaleString("default", { month: "long" }));
   }, []);
