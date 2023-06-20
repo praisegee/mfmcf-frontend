@@ -1,5 +1,6 @@
 .our-story {
   padding: 50px 0;
+  background-color: #f5eddc;
 }
 
 .our-story h1.heading {
@@ -35,9 +36,14 @@
   padding: 1.3rem;
   font-family: "Space Grotesk", sans-serif;
   text-align: center;
+  color: rgb(58, 49, 49);
 }
 
 .family-song pre {
   color: rgb(177, 78, 78);
   font-size: 1rem;
 }
+
+/* @media screen and (max-width: 676px) {
+    
+} */

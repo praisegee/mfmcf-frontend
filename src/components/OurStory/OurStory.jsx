@@ -4,8 +4,8 @@ import "./ourstory.css";
 function OurStory() {
   return (
     <>
-      <section className="container">
-        <div className="our-story">
+      <section className="our-story">
+        <div className="container">
           <h1 className="heading">Our Story</h1>
           <p className="text">
             In that year, 2013, the burden to establish an institution given to
@@ -38,13 +38,12 @@ function OurStory() {
             and dominate in this perverse world!
           </p>
           <br />
-          <br />
         </div>
         <div className="family-song">
-          <div>
+          {/* <div>
             <img src="../images/joy.png" alt="" />
-          </div>
-          <h3>Restored Family Song</h3>
+          </div> */}
+          <h3>The Restored Family Song</h3>
           <pre>
             We are the Restored Generation, <br />
             We are the family on the rock, <br />
