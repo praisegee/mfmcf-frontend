@@ -1,0 +1,43 @@
+.our-story {
+  padding: 50px 0;
+}
+
+.our-story h1.heading {
+  font-family: "Ubuntu", sans-serif;
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+  color: rgb(58, 49, 49);
+}
+
+.our-story p.text {
+  font-size: 1.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: rgb(58, 49, 49);
+}
+
+.family-song {
+  width: 200px;
+  margin: auto;
+}
+
+.family-song div {
+  display: block;
+  width: 30px;
+  margin: auto;
+}
+
+.family-song div img {
+  /* height: 100px; */
+  width: 100px;
+}
+
+.family-song h3 {
+  padding: 1.3rem;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+}
+
+.family-song pre {
+  color: rgb(177, 78, 78);
+  font-size: 1rem;
+}

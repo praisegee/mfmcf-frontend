@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./birthdaycelebrant.css";
 import { celebrants } from "../../data/Celeb";
+import { celebrantApi } from "../../data/Api";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -44,12 +45,29 @@ function Celebrant({ name, birthday, picture }) {
 
 function BirthdayCelebrant({ deviceType }) {
   const [month, setMonth] = useState("");
-  // const celebrants = getBirthdayClebrant();
+  const monthLabel = new Date()
+    .toLocaleDateString("default", {
+      month: "short",
+    })
+    .toLowerCase();
+  // const celebrantsTest = getBirthdayClebrant();
 
   // const celebrants = [];
   useEffect(() => {
+    // const celebrants = getBirthdayClebrant();
     setMonth(new Date().toLocaleString("default", { month: "long" }));
   }, []);
+
+  // async function getBirthdayClebrant() {
+  //   const resp = await fetch(celebrantApi + monthLabel);
+  //   const data = await resp.json();
+
+  //   return data;
+  // }
+
+  // console.log(celebrantApi + monthLabel);
+  console.log(monthLabel);
+  // console.log("Data: ", celebrants);
 
   return (
     <>

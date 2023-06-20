@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./firsttimer.css";
+import { newMemeberApi } from "../../data/Api";
 
 function FirstTimer() {
   const [modal, setModal] = useState(false);
@@ -19,19 +20,21 @@ function FirstTimer() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const url = "http://127.0.0.1:8000/api/members/";
-    const req = await fetch(url, {
+    // const url = newMemeberApi;
+    const req = await fetch(newMemeberApi, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        first_name: userData.firstName,
-        last_name: userData.lastName,
-        department: userData.department,
-        hostel_address: userData.hostelAddress,
-        phone_number: userData.phoneNumber,
-        date_of_birth: userData.dateOfBirth,
+        firsttimer: {
+          firstName: userData.firstName,
+          lastName: userData.lastName,
+          department: userData.department,
+          hostelAddress: userData.hostelAddress,
+          phoneNumber: userData.phoneNumber,
+          dateOfBirth: userData.dateOfBirth,
+        },
       }),
     });
     const res = await req.json();
